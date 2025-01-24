@@ -1,21 +1,90 @@
-.ca{
+.weather-app-container {
+  background: url("../src/components/images/rain-bg.jpg") no-repeat center center fixed;
+  background-size: cover;
+  height: 100vh;
   display: flex;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
 }
 
-.input{
+.weather-card {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 20px;
+  border-radius: 20px;
+  color: #fff;
+  width: 350px;
+  text-align: center;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.weather-header {
+  margin-bottom: 20px;
+}
+
+.weather-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.search-bar {
+  position: relative;
+  display: flex;
+}
+
+.search-input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 30px;
+  border: none;
   outline: none;
-  border: 1px rgba(127, 207, 231, 0.575) solid;
-  border-radius: 5px;
+  font-size: 16px;
 }
 
-.input:focus{
-  box-shadow: 1px 2px 3px 1px rgb(185, 185, 185);
-}
-.searchicon{
+.search-icon {
   position: absolute;
-  right: 5%;
-  top: 30%;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
   cursor: pointer;
-  font-size: 20px;
+  color: #fff;
+}
+
+.weather-image {
+  width: 150px;
+  margin-bottom: 10px;
+}
+
+.temperature {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.city-name {
+  font-size: 28px;
+}
+
+.coordinates {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.additional-info {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.info-item {
+  text-align: center;
+}
+
+.info-icon {
+  width: 40px;
+  margin-bottom: 5px;
+}
+
+.footer {
+  margin-top: 20px;
+  font-size: 12px;
 }
